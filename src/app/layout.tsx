@@ -19,9 +19,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body
-        className={twMerge(`${dmSans.className}  antialiased bg-[#EAEEFE]`)}
-      >
+      <body className={twMerge(dmSans.className, 'antialiased bg-background')}>
         {children}
       </body>
     </html>
