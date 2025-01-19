@@ -10,13 +10,9 @@ export const Hero = () => {
       <div className="container  ">
         <div className="md:flex items-center md:justify-between ">
           <div className="md:w-[478px]">
-            <div className="text-sm inline-flex border boder-[#222]/10 rounded-lg px-3 py-1 tracking-tight ">
-              Version 3.0 is here
-            </div>
-            <h1 className="text-5xl md:text-7xl font-bold tracking-tighter bg-gradient-to-b from-black to-[#001e80] text-transparent bg-clip-text">
-              Pathway to productivity
-            </h1>
-            <p className="text-xl text-[#010d3e] tracking-tighter mt-6">
+            <div className="tag">Version 3.0 is here</div>
+            <h1 className="title-content">Pathway to productivity</h1>
+            <p className="padding-content">
               Celebrate the joy of accomplishment with an app designed that
               track you progress, motivate you, and boost your productivity.
             </p>
