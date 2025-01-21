@@ -16,13 +16,17 @@
   .logo-ticker-image {
     @apply h-8 w-auto;
   }
-  .title-content {
-    @apply text-5xl md:text-7xl font-bold tracking-tighter bg-gradient-to-b from-black to-[#001e80] text-transparent bg-clip-text;
+  .section-title {
+    @apply text-5xl py-2 md:text-7xl font-bold tracking-tighter bg-gradient-to-b from-black to-[#001e80] text-transparent bg-clip-text;
   }
-  .padding-content {
+  .section-component {
     @apply text-xl text-[#010d3e] tracking-tighter mt-6;
   }
   .tag {
     @apply text-sm inline-flex border border-[#222]/10 rounded-lg px-3 py-1 tracking-tight;
+  }
+
+  .section-heading {
+    @apply max-w-[600px] mx-auto;
   }
 }

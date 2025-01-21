@@ -11,8 +11,8 @@ export const Hero = () => {
         <div className="md:flex items-center md:justify-between ">
           <div className="md:w-[478px]">
             <div className="tag">Version 3.0 is here</div>
-            <h1 className="title-content">Pathway to productivity</h1>
-            <p className="padding-content">
+            <h1 className="section-title">Pathway to productivity</h1>
+            <p className="section-component">
               Celebrate the joy of accomplishment with an app designed that
               track you progress, motivate you, and boost your productivity.
             </p>

@@ -6,14 +6,14 @@ export const ProductShowcase = () => {
   return (
     <section className="bg-gradient-to-b from-[#fff] to-[#d2dcff] py-24 overflow-x-clip">
       <div className="container">
-        <div className=" max-w-[600px] mx-auto">
+        <div className=" section-heading">
           <div className="flex justify-center md:justify-start mb-5">
             <div className="tag">Boost your productivity</div>
           </div>
-          <h2 className="title-content text-center md:text-[54px] md:leading-[60px]">
+          <h2 className="section-title text-center md:text-[54px] md:leading-[60px]">
             A move effective way to track progress
           </h2>
-          <p className="padding-content text-center">
+          <p className="section-component text-center">
             Effortless turn your idea into a fully functional, responsive,Sass
             website in just minues with this template
           </p>
@@ -32,7 +32,7 @@ export const ProductShowcase = () => {
             alt="Tube image"
             width={180}
             height={180}
-            className=" sm:block absolute bottom-16 -left-20  md:w-64 md:h-64 "
+            className="hidden sm:block absolute bottom-16 -left-20  md:w-64 md:h-64 "
           />
         </div>
       </div>
