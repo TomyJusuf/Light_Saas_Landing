@@ -1,5 +1,8 @@
+'use client'
+import { motion } from 'framer-motion'
 import CheckIcon from '../assets/check.svg'
 import { twMerge } from 'tailwind-merge'
+
 interface Tier {
   title: string
   monthlyPrice: number
@@ -62,7 +65,7 @@ const pricingTiers: Tier[] = [
 
 export const Pricing = () => {
   return (
-    <section className="py-24">
+    <section className="py-24 bg-white">
       <div className="container">
         <div className="section-heading">
           <h2 className="section-title text-center">Pricing</h2>
@@ -78,7 +81,7 @@ export const Pricing = () => {
               <div
                 key={title}
                 className={twMerge(
-                  'p-10 rounded-3xl shadow-[0_7px_14px_#eaeaea] border border-[#f1f1f1] max-w-sm w-full',
+                  'card',
                   inverse === true && 'bg-black text-white border-black'
                 )}
               >
@@ -93,9 +96,20 @@ export const Pricing = () => {
                   </h3>
                   {popular === true && (
                     <div className="inline-flex text-sm px-4 py-1.5 rounded-xl border border-white/20">
-                      <span className="bg-[linear-gradient(to_right,#dd7dd7,#e1cd86,#bbcb92,#3bffff,#dd7ddf)] text-transparent bg-clip-text font-medium">
+                      <motion.span
+                        animate={{
+                          backgroundPositionX: '-100% ',
+                        }}
+                        transition={{
+                          repeat: Infinity,
+                          repeatType: 'loop',
+                          duration: 1,
+                          ease: 'linear',
+                        }}
+                        className="bg-[linear-gradient(to_right,#dd7dd7,#e1cd86,#bbcb92,#3bffff,#dd7ddf,#e1cd86,#bbcb92,#3bffff,#dd7ddf)] [background-size:200%] text-transparent bg-clip-text font-medium"
+                      >
                         Popular
-                      </span>
+                      </motion.span>
                     </div>
                   )}
                 </div>
